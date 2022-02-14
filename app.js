@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const passport = require('passport');
 
+
 //Routing
 const register = require('./routes/user.route');
 const login = require('./routes/user.route');
@@ -14,7 +15,7 @@ const issueBook = require('./routes/issueBook.route');
 
 //Express
 const app = express();
-
+app.use(express.json());
 // Database connection
 const config = require("./db").mongoURI;
 
