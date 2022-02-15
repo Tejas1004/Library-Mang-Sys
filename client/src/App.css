@@ -27,12 +27,35 @@ a:hover {
   color: #100e1a;
   font-weight: 600;
   letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
 }
+.nav-link:hover {
+  color: #fff;
+}
+
 .nav-item {
   padding-right: 25px;
 }
 nav {
   background-color: #08708a;
+}
+.button {
+  background: #0077ff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background: #014a9c;
 }
 .navbar-brand span {
   font-size: 16px;
@@ -40,7 +63,7 @@ nav {
 }
 /* Navigation Ends */
 .banner {
-  background: url(library.jpg) no-repeat;
+  background: url("library.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;

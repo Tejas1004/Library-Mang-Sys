@@ -126,7 +126,7 @@ render() {
                     </div>
                 </div>
             </div>
-            <button type="submit" className="btn btn-large btn-success">Log In</button>
+            <button type="submit" className="button btn-large btn-success">Log In</button>
         </form>
     </div>
     );

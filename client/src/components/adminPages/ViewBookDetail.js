@@ -20,6 +20,7 @@ class ViewBookDetail extends Component{
 
     componentDidMount(){
 
+        // axios.get('/api/library/viewBookDetail/'+this.props.match.params.id)
         axios.get('/api/library/viewBookDetail/'+this.props.match.params.id)
             .then(res => {
                 this.setState({ 

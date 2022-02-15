@@ -14,7 +14,7 @@ class LibraryAddBook extends Component{
             book_name: "",
             author_name: "",
             book_cat: "",
-            quantity: "1",
+            quantity: "",
             status: false
         }
     }

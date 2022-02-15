@@ -29,6 +29,11 @@ class Navbar extends Component{
             <ul className="navbar-nav navbar-expand">
                 <li className="nav-item">
                     <Link className="nav-link" to="/register"> 
+                        Home
+                    </Link>    
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/register"> 
                         Sign Up
                     </Link>    
                 </li>
