@@ -6,6 +6,8 @@ This repo consists of Library management project using MERN.
 In the Root Directory, you have typed the command and installed all the Packages Using      
 npm install, and also for frontend same thing you have to do in client Root Directory. 
 After installing all the things run the command npm run dev and navigate to the localhost 3000
+
+
 2.For User instruction, You just have Register Yourself in the application  
 After successful registration, you have to login yourself as a student
 On Login page, You have to login using your email and password 
