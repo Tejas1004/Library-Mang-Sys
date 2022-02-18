@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authentication';
 import { withRouter } from 'react-router-dom';
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch,Link } from "react-router-dom";
 import Sidebar from '../layout/Sidebar';
 import DbLibrarian from '../librarianPages/DbLibrarian';
 import LibraryBookManage from '../librarianPages/LibraryBookManage';
@@ -31,12 +31,12 @@ class DashboardLibrarian extends Component {
                     </div>
                     <div className="col-md-9">
                         <div className="dashboard-rightbar">
-                            <h3>Quick Librarian Actions</h3>
+                            <Link to="/"> <h3>Quick Librarian Actions</h3> </Link>
                             <hr/>
                             <Switch>
-                                <Route exact path='/' component={DbLibrarian}/>
-                                <Route path='/librarian_book_manage' component={LibraryBookManage}/>
-                                <Route path='/libraryViewBook' component={LibraryViewBook}/>
+                                <Route exact path='/' component={DbLibrarian} />
+                                <Route path='/librarian_book_manage' component={LibraryBookManage} />
+                                <Route path='/libraryViewBook' component={LibraryViewBook} />
                                 <Route path='/libraryEditBook/:id' component={LibraryEditBook} />
                                 <Route path='/libraryAddBook' component={LibraryAddBook} />
                                 <Route path='/librarian_profile' component={LibrarianProfile} />

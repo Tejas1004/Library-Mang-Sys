@@ -5,16 +5,16 @@ const books = require('../models/books');
 const validateBooksInput = require('../validation/books'); 
 const bcrypt = require('bcryptjs'); 
 
-router.post('/addbooks', (req,res,next) => {
+ router.post('/addbooks', (req,res,next) => {
     const { errors, isValid } = validateBooksInput(req.body);
 
     if(!isValid) {
         return res.status(400).json(errors);
     }
 
-    books.findOne({
+     books.findOne({
         // book_id: req.body.book_id,
-        book_name: req.body.book_name
+         book_name: req.body.book_name
     }).then(book => {
         if(book) {
             return res.status(400).json({

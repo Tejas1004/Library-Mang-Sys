@@ -98,7 +98,7 @@ class LibraryAddBook extends Component{
                                     placeholder="Book Category" 
                                     name="book_cat"
                                     value={this.state.book_cat}
-                                >   
+                                 >   
                                   
                                   {
                                       schema.length > 0 && schema.map((el) =>{

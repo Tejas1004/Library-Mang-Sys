@@ -47,9 +47,9 @@ app.use('/api/library', getbookcat);
 app.use('/api/library', issueBook);
 
 //PORT
-let port = 5000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
-    console.log('Server is up and running on port number ' + port);
+    console.log(`Server is up and running on port number , ${port}`);
 });
 

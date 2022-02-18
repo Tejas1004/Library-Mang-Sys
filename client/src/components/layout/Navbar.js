@@ -28,7 +28,7 @@ class Navbar extends Component{
         const guestLinks = (
             <ul className="navbar-nav navbar-expand">
                 <li className="nav-item">
-                    <Link className="nav-link" to="/register"> 
+                    <Link className="nav-link" to="/"> 
                         Home
                     </Link>    
                 </li>
